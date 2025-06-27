@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Municipal Waste Classification</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        font-family: Arial, sans-serif;
+        height: 100%;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(12, 149, 44, 0.7);
+        padding: 15px 30px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+      }
+
+      .navbar h1 {
+        color: white;
+        font-size: 20px;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar ul li {
+        display: inline;
+      }
+
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .hero {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(43, 38, 206, 0.5);
+      }
+
+      .hero-content {
+        position: relative;
+        color: white;
+        max-width: 700px;
+        padding: 20px;
+      }
+
+      .hero-content h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      .hero-content button {
+        padding: 10px 20px;
+        background-color: #ba85bc;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        color: black;
+        font-weight: bold;
+      }
+
+      .hero-content button:hover {
+        background-color: #c0d546;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>MUNICIPAL WASTE CLASSIFICATION</h1>
+      <ul>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/predict-page">Predict</a>
+        <a href="/contact">Contact</a>
+      </ul>
+    </div>
+
+    <section class="hero" id="Home">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h2>Welcome to municipal waste classification</h2>
+        <p>
+          This platform allows you to upload images of waste materials, and our
+          advanced machine learning model will classify them into appropriate
+          categories. Proper waste classification helps in efficient recycling
+          and waste management, making our environment cleaner and more
+          sustainable.
+        </p>
+        <a href="/predict-page"><button class="btn">GET STARTED</button></a>
+      </div>
+    </section>
+  </body>
+</html>

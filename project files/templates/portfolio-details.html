@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prediction Result</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f9f9f9;
+        padding: 50px;
+      }
+      h2 {
+        color: #b30000;
+        margin-bottom: 20px;
+      }
+      img {
+        max-width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      h3 {
+        margin-top: 20px;
+        color: #333;
+      }
+      a {
+        margin-top: 30px;
+        display: inline-block;
+        text-decoration: none;
+        background-color: #b30000;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      a:hover {
+        background-color: #800000;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Prediction Result</h2>
+    <img src="{{ img_path }}" alt="Uploaded Image" /><br /><br />
+    <h3>Predicted Class: {{ prediction }}</h3>
+
+    <a href="/">Go Back to Home</a>
+  </body>
+</html>

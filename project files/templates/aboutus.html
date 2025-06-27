@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px 30px;
+      }
+      .navbar h1 {
+        color: white;
+        font-size: 20px;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+      }
+      .navbar ul li {
+        display: inline;
+      }
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <h1>MUNICIPAL WASTE CLASSIFICATION</h1>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/predict-page">Predict</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- About Us Section -->
+    <section
+      id="about"
+      style="padding: 60px 20px; background-color: #f9f9f9; text-align: center"
+    >
+      <h3 style="color: #b30000; margin-bottom: 10px">ABOUT</h3>
+      <h2 style="font-size: 28px">
+        Learn More <span style="color: #b30000">About Us</span>
+      </h2>
+      <p style="max-width: 800px; margin: 20px auto; line-height: 1.6">
+        GreenGuard Insights is a pioneering organization dedicated to enhancing
+        the efficiency and sustainability of municipal waste management.
+      </p>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 40px;
+          margin-top: 30px;
+          text-align: left;
+        "
+      >
+        <div style="flex: 1 1 300px; max-width: 400px">
+          <ul
+            style="list-style-type: disc; padding-left: 20px; line-height: 1.8"
+          >
+            <li>
+              Comprehensive analysis and classification of municipal waste based
+              on origin and recyclability.
+            </li>
+            <li>
+              Continuous innovations in environmentally-friendly waste disposal.
+            </li>
+            <li>
+              Innovative solutions to minimize landfill waste by identifying
+              high-recyclable categories.
+            </li>
+          </ul>
+        </div>
+        <div style="flex: 1 1 300px; max-width: 400px">
+          <p style="line-height: 1.8">
+            Our team of greatest asset: We are a diverse group of experts in
+            fields such as environmental science, data analysis, software
+            engineering, and waste management. Together, we bring a wealth of
+            knowledge and experience to tackle the challenges of municipal waste
+            classification and management.
+          </p>
+          <button
+            style="
+              margin-top: 10px;
+              padding: 10px 20px;
+              border: 1px solid #b30000;
+              color: #b30000;
+              background: transparent;
+              border-radius: 4px;
+              cursor: pointer;
+            "
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
